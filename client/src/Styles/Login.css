@@ -1,0 +1,55 @@
+/* Login.css - Styles for Login page */
+
+.login-bg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #000 60%, #0f0 80%, #d441d4 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.login-paper {
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(20, 20, 30, 0.95);
+  box-shadow: 0 0 80px #d441d4;
+  min-width: 350px;
+  max-width: 400px;
+}
+
+.login-title {
+  margin-bottom: 24px;
+  color: #0f0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login-input .MuiInputBase-input {
+  color: #0f0;
+}
+
+.login-input label {
+  color: #d441d4;
+}
+
+.login-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #d441d4;
+}
+
+.login-btn {
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #0f0 60%, #d441d4 100%);
+  color: #000;
+  font-weight: 700;
+}
+
+.register-btn {
+  border-color: #d441d4;
+  color: #d441d4;
+  font-weight: 700;
+}

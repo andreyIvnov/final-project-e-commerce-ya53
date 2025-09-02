@@ -1,0 +1,49 @@
+/* Register.css - Styles for Register page */
+
+.register-bg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #000 60%, #0f0 80%, #d441d4 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.register-paper {
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(20,20,30,0.95);
+  box-shadow: 0 0 40px #d441d4;
+  min-width: 350px;
+  max-width: 400px;
+}
+
+.register-title {
+  margin-bottom: 24px;
+  color: #0f0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.register-input .MuiInputBase-input {
+  color: #0f0;
+}
+
+.register-input label {
+  color: #d441d4;
+}
+
+.register-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #d441d4;
+}
+
+.create-btn {
+  margin-top: 16px;
+  background: linear-gradient(90deg, #0f0 60%, #d441d4 100%);
+  color: #000;
+  font-weight: 700;
+}
