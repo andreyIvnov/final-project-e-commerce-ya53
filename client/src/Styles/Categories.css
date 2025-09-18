@@ -1,0 +1,104 @@
+/* Categories.css - Styles for Categories, Category, AddNewCategory */
+
+.categories-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  width: 100%;
+}
+
+.categories-box {
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px;
+  box-shadow: 0 0 0 4px #d441d4;
+  padding: 32px 40px;
+  min-width: 400px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.categories-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f0;
+  margin-bottom: 24px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.category-item {
+  background: rgba(20,20,30,0.95);
+  border-radius: 12px;
+  box-shadow: 0 0 20px #d441d4;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d441d4;
+}
+
+.category-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.category-btn {
+  background: none;
+  border: 2px solid #d441d4;
+  color: #d441d4;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 4px 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.category-btn:hover {
+  background: #d441d4;
+  color: #fff;
+}
+
+.add-category-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.add-category-input {
+  flex: 1;
+  border-radius: 8px;
+  border: 2px solid #d441d4;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #d441d4;
+  background: rgba(255,255,255,0.1);
+}
+
+.add-category-btn {
+  background: linear-gradient(90deg, #0f0 60%, #d441d4 100%);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-category-btn:hover {
+  background: linear-gradient(90deg, #d441d4 60%, #0f0 100%);
+  color: #fff;
+}

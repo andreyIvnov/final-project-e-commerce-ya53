@@ -1,21 +1,28 @@
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Outlet } from 'react-router-dom';
 
-function Home() {
+function Main() {
   const currentUser = useSelector((state) => state.userR.user);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (!currentUser || !currentUser.id) {
       navigate('/login');
+    } else if (currentUser.isAdmin === true) {
+      navigate('adminmode');
+    } else if (currentUser.isAdmin === false) {
+      navigate('custommode');
     }
   }, [currentUser])
 
 
   return (
-    <div>Home</div>
+    <>
+      <Outlet />
+    </>
+
   )
 }
 
-export default Home
+export default Main

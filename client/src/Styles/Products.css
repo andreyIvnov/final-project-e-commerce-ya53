@@ -1,0 +1,17 @@
+/* Products.css - Styles for Products, Product, AddNewProduct */
+
+.add-new-btn {
+  margin-top: 32px;
+  background: linear-gradient(90deg, #0f0 60%, #d441d4 100%);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-new-btn:hover {
+  background: linear-gradient(90deg, #d441d4 60%, #0f0 100%);
+  color: #fff;
+}
